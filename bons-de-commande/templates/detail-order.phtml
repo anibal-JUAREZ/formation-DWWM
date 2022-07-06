@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bons de commande (classicmodels)</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/orders.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+    <header class="jumbotron">
+        <h1>Bon de commande n°<?= $_GET['orderNumber'] ?></h1>
+        <hr>
+        <p><< <a href="index.php">Retour à la page principale</a></p>
+    </header>
+
+    <section>
+        <!-- Les coordonnées du client -->
+        <p>
+            <strong>
+                <?=$customerInformation['customerName']?>
+            </strong>
+        </p>
+        <p>
+            <?=$customerInformation['contactLastName']." ".$customerInformation['contactFirstName'] ?>
+        </p>
+        <p><?=$customerInformation['addressLine1']?></p>
+        <p>
+            <?=$customerInformation['postalCode']." ".$customerInformation['city']?>
+        </p>
+        <p><?=$customerInformation['country']?></p>
+    </section>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Produit</th>
+                <th class="text-center">Quantité</th>
+                <th class="text-right">Prix Unitaire</th>
+                <th class="text-right">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php $montant =0;?>
+        <?php foreach($ordersInformation as $orderInformation):
+            $montant+=$orderInformation['TOTAL']?>
+            <tr>
+                <td>
+                   
+                    <?=$orderInformation['productName']?>
+                   
+                </td>
+                <td class="text-center"><?=$orderInformation['quantityOrdered']?></td>
+                <td class="text-right"><?=$orderInformation['priceEach']?></td>
+                <td class="text-right"><?=$orderInformation['TOTAL']?></td>
+                
+            </tr>
+        <?php endforeach;?>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="text-right" colspan="3">Montant HT</th>
+                <th class="text-right"><?=number_format($montant, 2, ',', ' ')?> $</th>
+                
+            </tr>
+            <tr>
+                <th class="text-right" colspan="3">TVA (20 %)</th>
+                <th class="text-right"><?=number_format($montant*0.2, 2, ',', ' ')?> $</th>
+            </tr>
+            <tr>
+                <th class="text-right" colspan="3">Montant TTC</th>
+                <th class="text-right"> <?=number_format($montant*1.2, 2, ',', ' ')?>$</th>
+            </tr>
+        </tfoot>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
