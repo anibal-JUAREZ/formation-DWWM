@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+   
+    background: linear-gradient(43deg, rgba(234,145,145,0.5) 0%, rgba(230,179,49,0.5) 100%),url('../images/photo.jpeg'); 
+   /*  background-image: url('/images/photo.jpeg'); */
+    
+    
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+
+header nav a img{
+    width: 10rem;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+
+header nav ul li a{
+    font-family: 'Roboto', sans-serif;
+    
+   
+    font-size: 1rem;
+}
+
+header nav ul li:nth-of-type(even){
+    margin: 1.5rem;
+}
+
+header section p a{
+    color:#EA9191;
+    border: white;
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 2rem;
+
+}
+header section{
+    padding: 18vh;
+}
+
+header section p{
+    font-family: 'Roboto', sans-serif;
+}
+
+header::after{
+    content:"";
+    display: block;
+    position: relative;
+    bottom: -4rem;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+;   transform: rotate(45deg);
+   
+}
+
+/* section gouter*/
+.container{
+    margin-top: 5rem;
+}
+#naturel article div{
+    width: 50%;
+    background-color: #E6B331;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#naturel article div img{
+    width: 100%;
+}
+#naturel article p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #4B4975;
+    margin-top: -5rem;
+    margin-left: 4rem;
+    width: 40%;
+}
+
+#naturel section section p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#naturel section section h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #4B4975;
+}
+
+#naturel section div{
+    margin-left: 1rem;
+}
+
+#naturel section div p{
+    margin-top: 1rem;
+}
+
+
+/* produits*/
+
+#produits{
+    margin-top: 3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+#produits h2{
+    font-family: 'Roboto', sans-serif;
+    color: #EA9191;
+    margin: 2rem 0;
+    
+    font-size: 2 rem;
+}
+ #produits section article img{
+     width: 50%;
+ }
+
+ #produits section article p:nth-of-type(1){
+    margin-top: 1rem;
+    font-size: 1rem;
+ }
+
+ /*footer*/
+
+
+ footer{
+     padding: 3rem;
+ }
+ footer section h3,
+ footer section p{
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+ }
+ footer img{
+     width: 1.5rem;
+
+ }
+
+footer section section{
+    
+    margin-top: 4rem; 
+    margin-bottom: 5rem;
+}
+footer section section div:first-child{
+    position: relative;
+    
+}
+footer section section div:first-child::after{
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 2.5rem;
+    top: 1rem;
+    
+}
+footer section section div:first-child::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    left: 0.7rem;
+    top: -4rem;
+    
+}
+
+
+footer section section div:last-child{
+    position: relative;
+}
+footer section section div:last-child::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    left: 0.7rem;
+    top: 2.7rem;
+}
+
+
+
+
+
+
+
+ 
+
+ 
+ footer{
+     margin: 2rem auto;
+     background: linear-gradient(43deg,  rgba(75, 73, 117, 0.5) 0%,rgba(234, 145, 145, 1) 50%,  rgba(230, 179, 49, 0.3) 100%);
+ }
+
+ footer div img:nth-of-type(2){
+     margin: 0 1.5rem;
+ }
+
+ footer section form input{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10rem;
+ }
+ footer section form textarea{
+    padding: 0 10 rem;
+ }
