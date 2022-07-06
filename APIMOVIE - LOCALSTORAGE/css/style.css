@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#show_movies{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;  
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+#img_main{
+    width: 10rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    border: 1px solid rgba(100, 100, 111, 0.2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.card div:first-of-type{
+    margin-right: 1rem;
+    width: 50%;
+}
+.card div:nth-of-type(2){
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    width: 50%;
+    text-align: center;
+}
+
+.cache{
+    display:none;
+}
+/* 
+.card_show{
+    display:block;
+}
+
+.card_hide{
+    display: none;
+}
+ */
+
+/* DETAIL TV SHOW */
+
+#detail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    
+}
+
+#detail article:first-of-type{
+    width: 48%;
+}
+
+#detail article:nth-child(2){
+    margin-left: 1rem;
+    width: 48%;
+}
+
+.season{
+    
+    background-color:#adb5bd;
+    color: white;
+    cursor: pointer;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+}
+
+#seasons div{
+    border: 1px solid grey;
+    
+}
+
