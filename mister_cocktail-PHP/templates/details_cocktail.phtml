@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Cocktail</title>
+    <!-- Charger CSS de bootstrap, police Montserrat sur Google Fonts et le CSS de l'application -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+     <!-- CSS -->
+     <link rel="stylesheet" href="www/css/cocktails.css">
+</head>
+<body class="container-fluid">
+    <nav>
+        <a href="index.php">Accueil</a>
+        <h1>Mister Cocktail</h1>
+    </nav>
+
+    <h2>Détails d'un cocktail</h2>
+    <ul>
+        <!-- Liste des informations sur le cocktail -->
+       
+        <li >NOM : <?php echo $detailCocktail['nom']?></li>
+        <li >Famille : <?php echo $detailCocktail['nomFamille']?></li>
+        <li >Description : <?php echo $detailCocktail['description']?></li>
+             
+        <li >Année conception : <?php echo $detailCocktail['dateConception']?></li>
+        <li >Prix moyen : <?php echo $detailCocktail['prixMoyen']?></li>
+
+
+
+    </ul>
+    <ul> 
+        <?php foreach($cocktailIngredients as $cocktailIngredient) : ?>
+            <li >Ingrédient : <?php echo $cocktailIngredient['nom']?></li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>

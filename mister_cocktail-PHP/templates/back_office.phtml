@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Charger CSS de bootstrap, police Montserrat sur Google Fonts et le CSS de l'application -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="www/css/cocktails.css">
+    <title>Back-office</title>
+</head>
+
+<body class="container-fluid">
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="ajouter_cocktail.php">Ajouter Cocktail</a>
+        <a href="back_office.php">Back-office</a>
+        <h1>Mister Cocktail</h1>
+    </nav>
+    <main>
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+        <!-- Listing de tous le cocktails -->
+        <?php foreach ($allCocktails as $oneCocktail) : ?>
+            <tr>
+                <td><?php echo $oneCocktail['id'] ?></td>
+                <td><?php echo $oneCocktail['nom'] ?></td>
+                <td><?php echo $oneCocktail['description'] ?></td>
+                <td><a href="edition.php?id=<?php echo $oneCocktail['id'] ?>">Edition</a></td>
+                <td><a href="suppression_cocktail.php?id=<?php echo $oneCocktail['id'] ?>">Suppression</a></td>
+            </tr>
+
+        <?php endforeach; ?>
+
+
+
+        </table>
+    </main>
+</body>
+
+</html>

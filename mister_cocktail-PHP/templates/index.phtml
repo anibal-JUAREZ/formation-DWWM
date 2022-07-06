@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Cocktail</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="www/css/cocktails.css">
+
+    <!-- Charger CSS de bootstrap, police Montserrat sur Google Fonts et le CSS de l'application -->
+</head>
+<body class="container-fluid">
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="ajouter_cocktail.php">Ajouter Cocktail</a>
+        <a href="back_office.php">Back-office</a>
+        <h1>Mister Cocktail</h1>
+        
+        
+    </nav>
+
+    <main>
+        <?php foreach($getcocktails as $oneCocktail): ?>
+        <!-- Listing de tous les cocktails -->
+        <section class="cocktail card">
+            <a href="details_cocktail.php?id=<?php echo $oneCocktail['id']?>">
+                <img class="card-img-top" src="www/images/cocktails/<?=$oneCocktail['urlPhoto']?>" alt="">
+            </a>
+            <article class="card-body">
+                 <h4 class="card-text card-title"><?=$oneCocktail['nom']?></h4>
+                 <p class="card-text"><?=$oneCocktail['description']?></p>
+            </article>
+            
+        </section>
+
+        <?php endforeach; ?>
+    </main>
+</body>
+</html>
+
+
