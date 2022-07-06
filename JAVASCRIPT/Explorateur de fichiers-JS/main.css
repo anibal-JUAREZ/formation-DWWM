@@ -1,0 +1,68 @@
+body
+{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+main aside
+{
+    margin: 1rem;
+}
+
+/* CSS pour la liste des fichiers */
+.file-list
+{
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+.file-list li
+{
+    /* mise en page */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* structure */
+    margin: 0 1em;
+    width: 128px;
+    height: 128px;
+
+    /* mise en forme et animation */
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: all 0.25s;
+   
+}
+.file-list li.selected      /* quand l'élément est sélectionné */
+{
+    background-color: #008FCC;
+}
+.file-list li:hover
+{
+    background-color: #D6F3FF;
+    border-color: #85DAFF;
+    cursor: pointer;
+}
+.file-list li i
+{
+    margin-bottom: 8px;
+    transition: all 0.25s;
+}
+.file-list li:hover i,          /* quand l'élément est survolé */
+.file-list li.selected i        /* quand l'élément est sélectionné */
+ {
+    color: #1FBCFF;
+} 

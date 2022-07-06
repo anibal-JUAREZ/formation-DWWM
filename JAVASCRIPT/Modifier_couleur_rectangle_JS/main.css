@@ -1,0 +1,20 @@
+#rectangle {
+    /* mise en forme */
+    background-color: darkorange;
+    border-radius: 4px;
+
+    /* dimensions */
+    width: 400px;
+    height: 300px;
+
+    /* positionnement initial */
+    left: 0px;
+    position: relative;
+    top: 0px;
+
+    /* animation */
+    transition: background-color 1s;
+}
+#rectangle.autre-couleur {
+    background-color: lightseagreen;
+}
