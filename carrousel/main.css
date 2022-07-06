@@ -1,0 +1,38 @@
+#diaporama {
+    height: calc(75vw * 1280 / 1920);
+    width: 75vw;
+    max-height: calc(960px * 1280 / 1920);
+    max-width: 960px;
+
+    margin: 30px auto 0;
+    border: 10px solid white;
+    box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.3);
+    background: black;
+    position: relative;
+}
+
+#diaporama img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#diaporama img.visible {
+    z-index:999;    
+}
+
+#buttons{
+   margin-top: 1rem;
+    text-align: center;
+}
+#buttons button{
+    background: #468faf;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid #2c7da0; 
+   
+}
+
+#buttons button i{
+    padding: 2px;
+}
