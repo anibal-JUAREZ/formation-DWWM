@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+#headSection {
+    background: linear-gradient(50deg, rgba(230, 84, 198, 0.3) , rgba(36, 171, 212, 0.2) ),url('/img/fitness.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#headSection nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headSection nav ul{
+    display: flex;
+}
+#headSection nav ul li{
+    list-style: none;
+}
+#headSection nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#headSection nav ul li:nth-child(2){
+    margin: 0 2.5rem;
+}
+
+.btn{
+    background-color: rgb(124 40 99);
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#headSection nav img, #headSection label img{
+    width: 3rem;
+}
+
+#headSection nav input{
+    display: none;
+}
+
+
+#headSection section{
+    color: white;
+    text-align: center;
+    padding: 20vh 0;
+}
+
+#headSection section h1{
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 700;
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#headSection section p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ /* program section */
+#program{
+    width: 90%;
+    margin: -5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;   
+}
+
+ #program article:first-child{
+    background: linear-gradient(rgba(4, 9, 30, 0.5) , rgba(4, 9, 30, 0.5) ),url('/img/fitnessman.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 17vh 0;
+    width: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ #program article:first-child h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem;
+}
+ #program article:first-child p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+
+ #program article:last-child{
+    background: linear-gradient(rgba(124, 40, 99, 0.5) , rgba(124, 40, 99, 0.5) ),url('/img/fitnesswoman.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 17vh 0;
+    width: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ #program article:last-child h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem;
+}
+ #program article:last-child p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+}
+
+/* objectif section */
+
+#objectif{
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#objectif h3{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#objectif p{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+#objectif article{
+    margin-top: 4rem;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    padding: 1rem;
+    width: calc(100%/4);
+}
+#objectif article:nth-of-type(even){
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#objectif article img{
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+#objectif article p{
+    font-size: 77%;
+    width: 100%;
+    
+}
+
+ /* fitclub section  */
+#fitClub{
+    padding: 12vh 0;
+    background: linear-gradient(90deg, rgba(124,40,99,0.3) 56%, rgba(0,0,0,1) 56%), url('/img/crossfit.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#fitClub article{
+    color:white;
+    text-align: left;
+    width: 30%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 57%;
+}
+
+#fitClub article h2{
+    margin-bottom: 1rem;
+    margin-left:-17%;   
+}
+
+#fitClub article p{
+    margin-bottom: 2rem;
+}
+
+
+/* service section  */
+
+#service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#service article{
+    width: calc(100%/3);
+    text-align: center;
+    padding: 1.3rem 0.8rem 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#service article img{
+    width: 2rem;
+}
+
+#service article p:first-of-type{
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+#service article:nth-of-type(odd){
+    background-color: #e8e8e4;
+}
+
+/* google maps */
+
+
+
+/* footer */
+#footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.6rem solid rgb(124 40 99);
+}
+
+
+/* first section */
+#footer section:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-right: 1rem;
+    width: 35%;
+}
+#footer section:first-child article{
+    width: 15%;
+    margin-top: -5rem;
+    padding-bottom: 1rem;
+}
+#footer section:first-child article img{
+    width: 100%;
+}
+#footer section:first-child  p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  0.7rem;
+    width: 60%;
+    text-align: right;
+    padding-bottom: 1rem;    
+}
+#footer section:first-child section{
+    text-align: right;
+}
+#footer section:first-child section i{
+    color: white;
+}
+#footer section:first-child i:nth-last-of-type(2){
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* second section  */
+#footer section:nth-child(2){
+    text-align: center;
+    width: 39%;
+}
+#footer section:nth-child(2) article{
+    background-color: white;
+    padding: 3rem 2.5rem 2.5rem;
+    border-bottom: 3rem solid black;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 1;
+}
+#footer section:nth-child(2) article h3{
+    color: black;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#footer section:nth-child(2) article p {
+    color: black;
+    padding-bottom: 1.5rem;
+}
+
+#footer section:nth-child(2) article input{
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    padding-right: 50%;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+#footer section:nth-child(2) article input[type="submit"]{
+    background-color: rgb(124 40 99);
+    padding: 0.9rem 0.8rem;
+    text-decoration: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 2rem auto 0;
+}
+
+/* third section  */
+#footer section:last-child{
+   width: 35%;
+   /* margin-top: -8rem; */
+}
+
+#footer section:last-child>article{
+    display: flex;
+    align-items: baseline;
+    margin-left: 1rem;
+    padding-bottom: 1rem;    
+    
+}
+
+#footer section:last-child>article i{
+   color: rgb(124 40 99);
+}
+
+#footer section:last-child>article section{
+    padding-left: 1rem;
+}
+#footer section:last-child>article section p{
+    color: white;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    
+ }
+ #footer section:last-child>article section p a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+ }
+ #footer section:last-child>article section p:first-of-type{
+     font-weight: bold;
+     padding-bottom: 1rem;
+     text-transform: uppercase;
+ }
+
+
+/* media */
+
+@media screen and (max-width:768px){
+  
+    #headSection .burger{
+        display: block;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    #headSection .burger::before {
+        content: '\f0c9';
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+    #headSection .burger:checked::before {
+        content: '\f00d';
+    }
+    #headSection nav ul li a{
+        text-transform: uppercase;
+    }
+    #headSection nav ul li:nth-of-type(3) > a{
+        background-color: white;
+        color: rgb(124 40 99);
+    }
+    #headSection nav{
+        background-color: rgb(124 40 99);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    #headSection nav ul{
+        position: fixed;
+        top: 4rem;
+        right: 0;
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 20vh;
+        flex-direction: column;
+        background-color: rgb(124 40 99);
+        z-index: 2;   
+    }
+    #headSection nav input:checked+ul{
+        display:flex
+    }
+   
+    /* fin menu */
+    #program{
+        width: 80%;
+        flex-direction: column; 
+    }
+    #program article:first-child{
+        width: 90%;
+    }
+    #program article:last-child{
+        width: 90%;
+    }
+
+    #objectif article{
+        width: calc(100%/2);
+    }
+    #objectif h3{
+        width: 70%;
+        margin: 0 auto 2rem;
+    }
+    #objectif p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #fitClub{
+    background: rgba(0,0,0,1);
+    }
+    #fitClub article{
+        margin:0 auto;
+    }
+    #fitClub article h2{
+      margin-left:0;
+    }
+    #objectif article p{
+        font-size: 77%;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #service article{
+        width: calc(100%/1);
+    }
+
+    #service article:nth-of-type(2), 
+    #service article:nth-of-type(3),
+    #service article:nth-of-type(6){
+        background-color: white;
+    }
+    #service article:nth-of-type(odd){
+        background-color: #e8e8e4;;
+    }
+
+    /* footer section  */
+    #footer{
+        flex-direction: column;
+    }
+    #footer section:first-child{
+        width: 80%;
+        order: 2;
+    }
+    #footer section:nth-child(2){
+        width: 80%;
+        order: 1;
+    }
+    #footer section:last-child{
+        width: 80%;
+        order: 3;
+    }
+    #footer section:nth-child(2) article{
+      border: none;
+    }
+    #footer section:first-child{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #footer section:nth-child(2){
+        margin-top: 1rem;
+    }
+    #footer section:last-child{
+        margin-top: 1rem;
+    }
+    #footer section:first-child article{
+        margin-top: 1rem;
+    }
+    #footer section:first-child{
+        align-items: center;
+        justify-content: center;
+    }   
+    #footer section:first-child section{
+        text-align: center;
+    }
+    #footer section:first-child  p{
+       text-align: center;
+    }
+
+
+}
+@media screen and (min-width:769px) and (max-width:990px){
+    #program{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #program article:first-child,
+    #program article:last-child{
+        width: 50%;
+    }
+    
+    #objectif article{
+        width: calc(100%/4);
+    }
+    #objectif article p{
+        font-size: 77%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #service article{
+        width: calc(100%/2);
+    }
+
+    #service article:nth-of-type(odd){
+        background-color: white;
+    }
+    #service article:nth-of-type(2), 
+    #service article:nth-of-type(3),
+    #service article:nth-of-type(6){
+        background-color: #e8e8e4;
+    }
+    
+  
+    #footer section:first-child,
+    #footer section:nth-child(2),
+    #footer section:last-child{
+        width:calc(100%/3);
+    }
+   
+}
