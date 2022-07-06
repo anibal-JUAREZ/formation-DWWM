@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1060px;
+    margin: auto;
+}
+
+/* header */
+ header{
+     background-image: url('images/detox\ cure\ smoothie.jpg');
+     background-size: cover;
+     background-position: center;
+    
+
+ }
+ header nav{
+     margin: auto 8%;
+     width: 100%;
+     
+ }
+ header nav img{
+     width: 7rem;
+ }
+  header nav ul{
+      text-align: right;
+      display: inline-block;
+      width: 71%;
+  }
+
+  header nav ul li{
+      display: inline-block;
+      color: white ;
+      
+  }
+  header nav ul li a{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  header nav ul li:nth-child(2){
+      margin: 0 3rem;
+  }
+
+  header h1{
+      width: 100%;
+      color: white;
+      padding: 25vh 0;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.3rem;
+  }
+
+  /* main section */
+
+  main .devise{
+      width: 70%;
+      margin: 4rem auto 3rem;
+      
+  }
+  main .devise article{
+      width: 40%;
+      float: left;
+      margin-right: 2rem;
+  }
+
+   main .devise article img{
+      width: 100%;
+     
+      
+     
+  }
+
+
+main .devise article aside{
+    padding: 2.5rem;
+    width: 40%;
+   
+}
+
+main .devise aside h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif
+}
+main .devise aside p{
+    width: 100%;
+    text-align: left;
+    
+}
+
+main .devise div{
+    clear: both;
+}
+
+/* methode de fabrication */
+
+main .fabrication{
+  
+    width: 100%;
+    background: linear-gradient(#FEB4C3, #F59E28);
+    
+}
+
+main .fabrication h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 4rem 0;
+    
+}
+
+main .fabrication article{
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+main .fabrication article p{
+    color: white;
+    padding: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* section concept */
+
+main .concept {
+    width: 90%;
+    margin: 4rem auto 0;
+    
+}
+
+main .concept h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 1rem;
+}
+
+main .concept article{
+    width: calc(100%/3);
+    text-align: center;
+    display: inline-block;
+    margin: 2rem 0 0;
+}
+main .concept article h3{
+    text-transform:none;
+    margin: 1rem 0;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #F59E28;
+    text-align: center;
+    color: white;
+    margin: 4rem 0 0;
+}
+
+footer small{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.2rem 0;
+    font-size: 0.8rem;
+}
